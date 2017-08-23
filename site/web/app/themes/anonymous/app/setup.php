@@ -51,7 +51,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_image_size('w800', 800, 9999);
     add_image_size('w600', 600, 9999);
-    add_image_size('w320', 320, 9999);
+    add_image_size('w360', 360, 9999);
 
     /**
      * Enable HTML5 markup support
