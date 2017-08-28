@@ -49,6 +49,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
+    add_image_size('w1200', 1200, 9999);
     add_image_size('w800', 800, 9999);
     add_image_size('w600', 600, 9999);
     add_image_size('w360', 360, 9999);
@@ -159,3 +160,15 @@ add_action('after_setup_theme', function () {
  * Init config
  */
 sage()->bindIf('config', Config::class, true);
+
+
+//Default thumbnail image setting
+add_action('save_post', function($post_id){
+  $post_thumbnail = get_post_meta( $post_id, $key = '_thumbnail_id', $single = true );
+  if ( !wp_is_post_revision( $post_id ) ) {
+    if ( empty( $post_thumbnail ) ) {
+      update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '21' );
+    }
+  }
+});
+

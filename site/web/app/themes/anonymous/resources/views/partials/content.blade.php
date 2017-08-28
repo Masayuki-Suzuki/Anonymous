@@ -1,7 +1,9 @@
 <article class="postContainer" @php(post_class())>
   <header>
     <div class="thumbnail">
-     {{ the_post_thumbnail('w360') }}
+      <a href="{{ get_permalink() }}">
+        {{ the_post_thumbnail('w360') }}
+      </a>
     </div>
     <h2 class="entry-title">
       <a href="{{ get_permalink() }}">{{ get_the_title() }}</a>
@@ -11,5 +13,5 @@
   <div class="entry-summary">
     @php(the_excerpt())
   </div>
-  <div class="tag">{{ the_tags('<ul><li>','</li><li>','</li></ul>') }}</div>
+  <div class="tag">{{ the_category() }}</div>
 </article>

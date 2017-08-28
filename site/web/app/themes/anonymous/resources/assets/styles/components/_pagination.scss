@@ -1,0 +1,46 @@
+.pagination{
+  align-self: flex-end;
+  display: block;
+  width: 100%;
+  &__body{
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    width: 95%;
+  }
+  &__cur,
+  &__max{
+    color: #ccc;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  &__list{
+    a{
+      display: block;
+    }
+  }
+}
+
+.prev,
+.next{
+  background: #eee;
+  border-radius: 100%;
+  display: block;
+  height: 45px;
+  width: 45px;
+}
+
+.prev{
+  margin: 0 10px 0 0;
+}
+
+.next{
+  margin: 0 0 0 10px;
+}
+
+.nolink{
+  background: #f5f5f5;
+}

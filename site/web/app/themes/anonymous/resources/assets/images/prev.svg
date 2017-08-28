@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>pagination</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pc-view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-detail" transform="translate(-846.000000, -1561.000000)">
+            <g id="pagination" transform="translate(846.000000, 1561.000000)">
+                <circle id="Oval-3" fill="#EEEEEE" cx="22.5" cy="22.5" r="22.5"></circle>
+                <path d="M18.2781746,17.5710678 L27.5710678,26.863961 L27.5710678,17.5710678 L18.2781746,17.5710678 Z" id="Rectangle-14" stroke="#AAAAAA" transform="translate(22.571068, 22.571068) rotate(45.000000) translate(-22.571068, -22.571068) "></path>
+                <path d="M28.5,22.5 L15.5,22.5" id="Line" stroke="#AAAAAA" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

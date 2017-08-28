@@ -1,0 +1,87 @@
+.postContent{
+  margin: 60px auto;
+  padding: 0 5% 0 0;
+  img{
+    display: block;
+    max-width: 100%;
+  }
+  p{
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+  }
+  h1{
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  h3{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  h5{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  h6{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 25px 0 7px;
+  }
+  a{
+    border-bottom: solid 1px transparent;
+    color: #16ACCE;
+    transition: all 0.4s ease;
+    &:active,
+    &:link,
+    &:visited{
+      color: #16ACCE;
+    }
+    &:hover{
+      border-bottom: solid 1px #00698A;
+      color: #00698A;
+    }
+  }
+  .meta{
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0 30px;
+    padding: 0 0 15px;
+  }
+  .updated{
+    margin: 0;
+  }
+  .post-categories{
+    margin: 0;
+  }
+  .entry-title{
+    font-size: 3rem;
+    margin: 24px 0 0 0;
+    &.nothumbnail{
+      margin: 0;
+    }
+  }
+}
+
+.post_thumbnail{
+  display: block;
+  width: 100%;
+  img{
+    height: inherit;
+    width: 100%;
+  }
+}

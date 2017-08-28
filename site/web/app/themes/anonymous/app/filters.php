@@ -68,3 +68,13 @@ add_filter('template_include', function ($template) {
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
 add_filter('comments_template', 'App\\template_path');
+
+//Category html override: Add span to counting number
+add_filter( 'wp_list_categories', function($output){
+  $replaced_text = preg_replace('/<\/a> \(([0-9,]*)\)/', ' <span class="count">${1}</span></a>', $output);
+  if($replaced_text != NULL) {
+    return $replaced_text;
+  } else {
+    return $output;
+  }
+});

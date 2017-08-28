@@ -111,3 +111,54 @@ function title()
     }
     return get_the_title();
 }
+
+//
+function getPostViews($postID){
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if($count==''){
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '0');
+    return "0 View";
+  }
+  return $count.' Views';
+}
+function setPostViews($postID) {
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if($count==''){
+    $count = 0;
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '0');
+  }else{
+    $count++;
+    update_post_meta($postID, $count_key, $count);
+  }
+}
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+
+function checkThumbnailName(){
+  $image_id = get_post_thumbnail_id ();
+  $image_url = wp_get_attachment_image_src ($image_id, true);
+  if(strpos($image_url[0], "noimage") === false){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function getPageNumber(){
+  global $paged;
+  if(empty($paged)){
+    echo 1;
+  } else {
+    echo $paged;
+  }
+}
+
+function getPageMaxNumber(){
+  global $wp_query;
+  $pages = $wp_query->max_num_pages;
+  echo $pages;
+}
