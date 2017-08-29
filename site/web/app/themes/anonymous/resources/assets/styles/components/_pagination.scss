@@ -1,6 +1,7 @@
 .pagination{
   align-self: flex-end;
   display: block;
+  margin: 50px 0 0;
   width: 100%;
   &__body{
     align-items: center;
@@ -30,17 +31,46 @@
   border-radius: 100%;
   display: block;
   height: 45px;
+  position: relative;
+  transition: opacity 0.5s ease;
   width: 45px;
+  &:hover{
+    opacity: 0.7;
+  }
+  &:after{
+    color: #aaa;
+    display: block;
+    font-size: 3rem;
+    font-family: FontAwesome;
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+  }
 }
 
 .prev{
   margin: 0 10px 0 0;
+  &:after{
+    content:"\f104";
+    margin: -16px 0 0 -7px;
+  }
 }
 
 .next{
   margin: 0 0 0 10px;
+  &:after{
+    content:"\f105";
+    margin: -16px 0 0 -4px;
+  }
 }
 
 .nolink{
-  background: #f5f5f5;
+  background: #f8f8f8;
+  &:hover{
+    opacity: 1;
+  }
+  &:after{
+    color: #ddd;
+  }
 }
