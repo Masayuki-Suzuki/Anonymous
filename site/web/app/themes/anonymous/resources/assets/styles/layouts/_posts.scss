@@ -1,6 +1,82 @@
 .postContent{
   margin: 60px auto;
   padding: 0 5% 0 0;
+  .meta{
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0 10px;
+    padding: 0 0 15px;
+  }
+  .updated{
+    margin: 0;
+  }
+  .post-categories{
+    margin: 0;
+  }
+  .entry-title{
+    font-size: 3rem;
+    margin: 24px 0 0 0;
+    &.nothumbnail{
+      margin: 0;
+    }
+  }
+  .snsShare{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 10px;
+    &__list{
+      margin: 0 0 0 15px;
+      a{
+        &:before{
+          color: #555;
+          font-family: FontAwesome;
+          font-size: 2.4rem;
+          transition: color 0.35s ease;
+        }
+        &:hover{
+          opacity: 1;
+          &:before {
+            color: #16ACCE;
+          }
+        }
+      }
+    }
+  }
+  .pagination{
+    &__body{
+      width: 100%;
+    }
+  }
+}
+
+.google{
+  &:before{
+    content: '\f2b3';
+  }
+}
+
+.pocket{
+  &:before{
+    content: '\f265';
+  }
+}
+
+.hatena{
+  color: #555;
+  font-size: 2.4rem;
+  font-weight: 600;
+  transition: color 0.35s ease;
+  &:hover{
+    color: #16ACCE;
+    opacity: 1;
+  }
+}
+
+
+.entry-content{
   img{
     display: block;
     max-width: 100%;
@@ -54,26 +130,56 @@
       color: #00698A;
     }
   }
-  .meta{
-    align-items: center;
-    border-bottom: solid 1px #ccc;
-    display: flex;
-    justify-content: space-between;
-    margin: 3px 0 30px;
-    padding: 0 0 15px;
-  }
-  .updated{
-    margin: 0;
-  }
-  .post-categories{
-    margin: 0;
-  }
-  .entry-title{
-    font-size: 3rem;
-    margin: 24px 0 0 0;
-    &.nothumbnail{
+  blockquote{
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 40px;
+    position: relative;
+    &:before{
+      background: url(../images/quoteLeft.svg) no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 13px;
+      top: 14px;
+      height: 20px;
+      width: 32px;
+    }
+    &:after{
+      background: url(../images/quoteRight.svg) no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      position: absolute;
+      right: 13px;
+      bottom: 14px;
+      height: 20px;
+      width: 32px;
+    }
+    p{
       margin: 0;
     }
+    i{
+      letter-spacing: 0.02em;
+    }
+  }
+  ul{
+    padding: 0 0 0 20px;
+    li{
+      list-style: disc;
+    }
+  }
+  ol{
+    padding: 0 0 0 20px;
+    li{
+      list-style: decimal;
+    }
+  }
+  li{
+    font-size: 1.8rem;
   }
 }
 

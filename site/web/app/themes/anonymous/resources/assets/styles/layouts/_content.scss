@@ -5,6 +5,7 @@
 }
 
 .content{
+  align-items: flex-start;
   display: flex;
 }
 
@@ -24,11 +25,28 @@
   width: 45%;
 }
 
+.thumbnail{
+  a{
+    display: block;
+  }
+  img{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
 .entry-title{
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.2;
   margin: 24px 0 0 0;
+  a{
+    transition: color 0.35s ease;
+    &:hover{
+      color: #16ACCE;
+    }
+  }
 }
 
 .updated{
@@ -58,15 +76,15 @@
   text-transform: uppercase;
   a{
     color: #777;
-    transition: opacity 0.5s ease;
-    &:hover{
-      opacity: 0.7;
-      transition: opacity 0.5s ease;
-    }
+    transition: color 0.5s ease;
     &:active,
     &:link,
     &:visited{
       color: #777;
+    }
+    &:hover{
+      color: #16ACCE;
+      transition: color 0.5s ease;
     }
   }
 }
@@ -84,19 +102,20 @@
   }
   li{
     font-size: 1.2rem;
+    list-style: none;
     margin: 0 0 0 10px;
     a{
       color: #777;
       letter-spacing: 0.02em;
       text-transform: uppercase;
       transition: color 0.5s ease;
-      &:hover{
-        color: #aaa;
-      }
       &:active,
       &:link,
       &:visited{
         color: #777;
+      }
+      &:hover{
+        color: #16ACCE;
       }
     }
   }

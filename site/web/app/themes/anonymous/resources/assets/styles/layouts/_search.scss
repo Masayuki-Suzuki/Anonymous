@@ -1,0 +1,33 @@
+.result{
+  border-bottom: solid 1px #ccc;
+  font-size: 2.4rem;
+  //font-weight: 300;
+  margin: 60px 0 -30px;
+  padding: 0 0 10px;
+  width: 95%;
+}
+
+.no-results{
+  margin: 60px 0 0;
+  width: 95%;
+  .search-form{
+    margin: 30px 0 0;
+    width: 100%;
+  }
+  p{
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+    a{
+      color: $clink-color;
+      transition: color 0.4s ease;
+      &:active,
+      &:link,
+      &:visited{
+        color: $clink-color;
+      }
+      &:hover{
+        color: #00698A;
+      }
+    }
+  }
+}

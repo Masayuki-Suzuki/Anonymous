@@ -5,6 +5,8 @@
 }
 
 .footerContainer{
+  align-items: center;
+  display: flex;
   margin: 0 auto;
   max-width: 1160px;
   width: 95%;
@@ -13,6 +15,26 @@
     font-size: 2.5rem;
     span{
       font-size: 1rem;
+    }
+  }
+}
+
+.ftNav{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  &__list{
+    margin: 0 0 0 20px;
+    a{
+      color: #fff;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      &:active,
+      &:link,
+      &:visited{
+        color: #fff;
+      }
     }
   }
 }

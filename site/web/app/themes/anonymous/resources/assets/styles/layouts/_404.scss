@@ -1,0 +1,46 @@
+.notfound{
+  margin: 120px 0 0;
+  width: 95%;
+  h2{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 100px;
+    text-align: center;
+    span{
+      display: block;
+      font-size: 15rem;
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  }
+  h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  ol{
+    margin: 20px 0 0;
+    padding: 0 0 0 2em;
+    li{
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      list-style: decimal;
+      margin: 0 0 10px;
+    }
+  }
+  section{
+    margin: 0 0 60px;
+    a{
+      color: $clink-color;
+      transition: all 0.4s ease;
+      &:active,
+      &:link,
+      &:visited{
+        color: $clink-color;
+      }
+      &:hover{
+        color: #00698A;
+      }
+    }
+  }
+}

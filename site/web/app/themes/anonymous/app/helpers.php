@@ -162,3 +162,8 @@ function getPageMaxNumber(){
   $pages = $wp_query->max_num_pages;
   echo $pages;
 }
+
+function getFullURI(){
+  $http = is_ssl() ? 'https' : 'http' . ':' . get_the_permalink();
+  return $http;
+}
