@@ -10,7 +10,7 @@
         <li class="gNav__list"><a class="github" href="https://github.com/Masayuki-Suzuki" target="_blank"></a></li>
         <li class="gNav__list"><a class="twitter" href="https://twitter.com/9_Planet" target="_blank"></a></li>
         <li class="gNav__list"><a class="facebook" href="https://www.facebook.com/masayuki.suzuki.50" target="_blank"></a></li>
-        <li class="gNav__list"><a class="linkedin" href="https://www.linkedin.com/in/masayuki-suzuki/" target="_blank"></a></li>
+        {{--<li class="gNav__list"><a class="linkedin" href="https://www.linkedin.com/in/masayuki-suzuki/" target="_blank"></a></li>--}}
       </ul>
     </nav>
   </div>

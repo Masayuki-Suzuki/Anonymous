@@ -55,7 +55,7 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin']);
+}, ['helpers', 'setup', 'filters', 'admin','CustomResentPost']);
 
 /**
  * Here's what's happening with these hooks:
@@ -89,3 +89,5 @@ if ($sage_views !== get_option('stylesheet')) {
     wp_redirect($_SERVER['REQUEST_URI']);
     exit();
 }
+
+add_action('widgets_init', 'my_recent_widget_registration');

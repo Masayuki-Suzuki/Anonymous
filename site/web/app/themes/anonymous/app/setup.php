@@ -53,6 +53,7 @@ add_action('after_setup_theme', function () {
     add_image_size('w800', 800, 9999);
     add_image_size('w600', 600, 9999);
     add_image_size('w360', 360, 9999);
+    add_image_size('square', 120, 120,true);
 
     /**
      * Enable HTML5 markup support
@@ -172,3 +173,4 @@ add_action('save_post', function($post_id){
   }
 });
 
+add_action('widgets_init', 'my_recent_widget_registration');
