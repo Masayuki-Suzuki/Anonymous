@@ -7,22 +7,46 @@
 .content{
   align-items: flex-start;
   display: flex;
+  @media (max-width: 740px){
+    flex-direction: column;
+  }
 }
 
 .main{
   display: flex;
   flex-wrap: wrap;
   width: 74.66666%;
+  @media (max-width: 900px){
+    flex-direction: column;
+  }
+  @media (max-width: 740px){
+    margin: auto;
+    width: 95%;
+  }
 }
 
 .sidebar{
   margin: 60px 0 0;
   width: 33.3333333%;
+  @media (max-width: 900px){
+    margin: 40px 0 0;
+  }
+  @media (max-width: 740px){
+    margin: 60px auto 0;
+    width: 95%;
+  }
 }
 
 .postContainer{
   margin: 60px 5% 0 0;
   width: 45%;
+  @media (max-width: 900px){
+    width: 95%;
+  }
+  @media (max-width: 740px){
+    margin: 40px 0 0;
+    width: 100%;
+  }
 }
 
 .thumbnail{
@@ -32,6 +56,8 @@
   img{
     display: block;
     height: auto;
+    margin: auto;
+    max-width: 360px;
     width: 100%;
   }
 }

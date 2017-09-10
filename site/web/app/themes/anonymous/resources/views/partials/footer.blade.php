@@ -6,9 +6,9 @@
     </a>
 
     <ul class="ftNav">
-      <li class="ftNav__list"><a href="">home</a></li>
-      <li class="ftNav__list"><a href="">about</a></li>
-      <li class="ftNav__list"><a href="">contact</a></li>
+      <li class="ftNav__list"><a href="{{ home_url('/') }}">home</a></li>
+      <li class="ftNav__list"><a href="/about">about</a></li>
+      <li class="ftNav__list"><a href="/contact">contact</a></li>
     </ul>
 
     {{--@php(dynamic_sidebar('sidebar-footer'))--}}

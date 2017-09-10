@@ -10,6 +10,9 @@
   margin: 0 auto;
   max-width: 1160px;
   width: 95%;
+  @media (max-width: 740px){
+    flex-direction: column-reverse;
+  }
   .logo__brand{
     color: #fff;
     font-size: 2.5rem;
@@ -23,7 +26,11 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 60%;
+  @media (max-width: 740px){
+    margin: 0 auto 15px;
+    justify-content: center;
+  }
   &__list{
     margin: 0 0 0 20px;
     a{
