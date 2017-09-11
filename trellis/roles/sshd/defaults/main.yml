@@ -4,7 +4,7 @@
 sshd_config: sshd_config.j2
 
 sshd_ports:
-  - 22
+  - 6222
 
 sshd_listen_addresses:
   - 0.0.0.0

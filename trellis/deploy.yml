@@ -1,4 +1,4 @@
----
+e---
 - include: variable-check.yml
   vars:
     playbook: deploy.yml
