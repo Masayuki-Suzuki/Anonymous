@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d49c9d50ce1e6d19fea56d4dcc20231",
+    "content-hash": "5189fb880e2495788e47c9e2127ab04e",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.4.0",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -59,69 +59,52 @@
             "keywords": [
                 "Craft",
                 "Dolibarr",
-                "Eliasis",
                 "Hurad",
                 "ImageCMS",
-                "Kanboard",
-                "Lan Management System",
                 "MODX Evo",
                 "Mautic",
-                "Maya",
                 "OXID",
-                "Plentymarkets",
-                "Porto",
-                "RadPHP",
                 "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
                 "aimeos",
                 "annotatecms",
-                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
-                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
                 "dokuwiki",
                 "drupal",
-                "eZ Platform",
                 "elgg",
-                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
-                "itop",
                 "joomla",
                 "kohana",
                 "laravel",
-                "lavalite",
                 "lithium",
                 "magento",
                 "mako",
                 "mediawiki",
                 "modulework",
                 "moodle",
-                "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
                 "puppet",
-                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
-                "sydes",
                 "symfony",
                 "typo3",
                 "wordpress",
-                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2017-08-09T07:53:48+00:00"
+            "time": "2016-04-13T19:46:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -399,37 +382,67 @@
         },
         {
             "name": "wp-sync-db/wp-sync-db",
-            "version": "dev-delicious-brains",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db.git",
-                "reference": "87ad434deb71773e658f47449f93a3f283dc1fa9"
+                "reference": "8f18390a83374089acfac202491e78d4938616fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db/zipball/87ad434deb71773e658f47449f93a3f283dc1fa9",
-                "reference": "87ad434deb71773e658f47449f93a3f283dc1fa9",
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db/zipball/8f18390a83374089acfac202491e78d4938616fd",
+                "reference": "8f18390a83374089acfac202491e78d4938616fd",
                 "shasum": ""
             },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/"
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db",
+            "keywords": [
+                "db",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2016-04-24T08:56:12+00:00"
         },
         {
             "name": "wp-sync-db/wp-sync-db-media-files",
-            "version": "dev-delicious-brains",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git",
-                "reference": "2b790b6af6751a98abd468bab34cba2313418dbf"
+                "reference": "be6dc51678ee7e44c158d9bd38169aba4ac8964c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db-media-files/zipball/2b790b6af6751a98abd468bab34cba2313418dbf",
-                "reference": "2b790b6af6751a98abd468bab34cba2313418dbf",
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db-media-files/zipball/be6dc51678ee7e44c158d9bd38169aba4ac8964c",
+                "reference": "be6dc51678ee7e44c158d9bd38169aba4ac8964c",
                 "shasum": ""
             },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/"
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "description": "WP Sync DB Media File Addon for WP Sync DB",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
+            "keywords": [
+                "media",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2015-01-17T02:23:40+00:00"
         }
     ],
     "packages-dev": [
@@ -486,9 +499,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "wp-sync-db/wp-sync-db": 20
+    },
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6"
