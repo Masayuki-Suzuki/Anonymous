@@ -21,7 +21,7 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
       <ul class="recentPost">
         <?php while( $r->have_posts() ) : $r->the_post(); ?>
           <li class="recentPost__list">
-            <a class="recentPost__link" href="<?php echo is_ssl() ? 'https' : 'http' . ':' . get_the_permalink(); ?>" title="<?php the_title(); ?>">
+            <a class="recentPost__link" href="<?php echo get_the_permalink(); ?>" title="<?php the_title(); ?>">
               <figure class="recentPost__thumbnail">
                 <?php the_post_thumbnail('square'); ?>
               </figure>
