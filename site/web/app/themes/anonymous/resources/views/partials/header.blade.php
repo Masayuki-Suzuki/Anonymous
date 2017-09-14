@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__wrap">
     <a href="{{ home_url('/') }}" class="logo">
-      <img class="logo__symbol logo__animate" src="{{ get_stylesheet_directory_uri() }}/dist/images/logo.svg" alt="">
+      <img class="logo__symbol logo__animate" src="{{ get_stylesheet_directory_uri() }}/dist/images/logo_88f4e443.svg" alt="">
       <h1 class="logo__brand logo__animate">anonymous<span class="subtitle">front-end developer in Vancouver</span></h1>
     </a>
     <nav class="gNav">
