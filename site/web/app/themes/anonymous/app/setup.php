@@ -168,7 +168,7 @@ add_action('save_post', function($post_id){
   $post_thumbnail = get_post_meta( $post_id, $key = '_thumbnail_id', $single = true );
   if ( !wp_is_post_revision( $post_id ) ) {
     if ( empty( $post_thumbnail ) ) {
-      update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '21' );
+      update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '13' );
     }
   }
 });
