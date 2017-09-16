@@ -174,3 +174,11 @@ add_action('save_post', function($post_id){
 });
 
 add_action('widgets_init', 'my_recent_widget_registration');
+
+add_action('rest_api_init', function(){
+  register_rest_field('post','category_name',
+    array(
+      'get_callback' => 'get_category_name'
+    )
+  );
+});
