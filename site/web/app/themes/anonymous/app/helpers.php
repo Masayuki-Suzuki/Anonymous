@@ -167,9 +167,3 @@ function getFullURI(){
   $http = is_ssl() ? 'https' : 'http' . ':' . get_the_permalink();
   return $http;
 }
-
-function get_category_name($object){
-  $category = get_the_category($object['id']);
-  $cat_name = $category[0]->cat_name;
-  return $cat_name;
-}
