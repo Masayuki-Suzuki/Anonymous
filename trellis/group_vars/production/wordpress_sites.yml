@@ -16,8 +16,8 @@ wordpress_sites:
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
-      enabled: true
-      subdomains: true
+      enabled: false
+      subdomains: false
     ssl:
       enabled: true
       provider: letsencrypt
